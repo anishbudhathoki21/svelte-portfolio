@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*----------------------------------------*/
+body{
+  background-color:black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+  text-align: center;
+  font-size:2em;
+  color:#FFF0F5;
+  line-height:10px;
+  letter-spacing:10px;
+}
+
+p{
+  text-align: center;
+  color:#FFF0F5;
+  letter-spacing:10px;
+  font-size:.75em;
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size:1em;
+  margin-left:-50px;
+}
+
+/*----------------------------------------*/
+
+#icons{
+  color:#FFF0F5;
+  list-style:none;
+}
+#icons a{
+  color:#FFF0F5;
+  text-decoration:none;
+}
+#icons li{
+  display:inline;
+}
+.centered {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+/*-----------------------------------------*/
+/*             Media Quries                */
+/*-----------------------------------------*/
+@media only screen and (max-width: 1400px) {
+  h1{
+    text-align: center;
+    font-size:1.25em;
+    color:#FFF0F5;
+    line-height:10px;
+    letter-spacing:5px;
+  }
+
+  p{
+    text-align: center;
+    color:#FFF0F5;
+    font-size:.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    text-align: center;
+    font-size:1em;
+    color:#FFF0F5;
+    line-height:10px;
+    letter-spacing:1px;
+  }
+
+  p{
+    text-align: center;
+    color:#FFF0F5;
+    font-size:.4em;
+  }
+}
