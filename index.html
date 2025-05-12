@@ -1,41 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="wrapper centered">
-      <h1 class="upper">Anish Budhathoki</h1>
-        <p>Hello<span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-      </span>
-    </div>
-    <footer class="center">
-      <ul id="icons">
-        <li>
-          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fa fa-facebook" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </footer>
-    <script src="./js/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anish Budhathoki - Software Developer specializing in JavaScript, React, and Laravel">
+  <meta name="keywords" content="software developer, web developer, laravel developer, laravel developer nepal, JavaScript, React, Laravel, portfolio">
+  <meta name="author" content="Anish Budhathoki">
+  <meta property="og:title" content="Anish Budhathoki | Portfolio">
+  <meta property="og:description" content="Software Developer specializing in Laravel">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anishbudhathoki.com">
+  <meta name="theme-color" content="#000000">
+
+  <title>Anish Budhathoki | Portfolio</title>
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+
+  <link rel="preload" href="./style/style.css" as="style">
+  <link rel="preload" href="./js/script.js" as="script">
+
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="loader">
+    <div class="loader-content"></div>
+  </div>
+
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" aria-label="Toggle dark/light theme" />
+    <label for="theme-switch">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <main class="content">
+      <section class="intro">
+        <h1>Anish Budhathoki</h1>
+        <div class="tagline">
+          <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+      </section>
+
+      <div class="info-grid">
+        <section class="about info-card">
+          <h2>About</h2>
+          <p>I'm a software engineer focused on creating clean, efficient, and user-friendly applications.</p>
+          <p>Specializing in <span class="highlight">JavaScript</span>, <span class="highlight">React</span>, and <span class="highlight">Laravel</span>.</p>
+        </section>
+
+        <section class="experience info-card">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Software Engineer</h3>
+              <p class="company">Inctic Labs</p>
+              <p class="period">2022 - 2024</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Software Engineer</h3>
+              <p class="company">Next Nepal</p>
+              <p class="period">2021 - 2022</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="education info-card">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>BSc Computing</h3>
+              <p class="institution">Softwarica College of IT & E-commerce</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills info-card">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>HTML/CSS</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>AWS</li>
+            <li>Redis</li>
+            <li>Shopify</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="connect">
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com/anishbudhathoki21" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anish-budhathoki-9b80a5204" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:anish.budhathoki18@gmail.com" aria-label="Email Me">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <script src="https://unpkg.com/scrollreveal@4.1.0/dist/scrollreveal.min.js"></script>
+  <script src="./js/particles.js" defer></script>
+  <script src="./js/script.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Anish Budhathoki",
+      "jobTitle": "Software Engineer",
+      "url": "https://anishbudhathoki.com",
+      "sameAs": [
+        "https://github.com/anishbudhathoki21",
+        "https://www.linkedin.com/in/anish-budhathoki-9b80a5204",
+        "https://twitter.com/anishbudhathoki"
+      ],
+      "skills": ["JavaScript", "React", "Laravel", "PHP", "Node.js", "TypeScript", "HTML/CSS", "MySQL", "MongoDB", "AWS", "Redis", "Shopify"]
+    }
+  </script>
+</body>
 </html>
-
-
-
-
